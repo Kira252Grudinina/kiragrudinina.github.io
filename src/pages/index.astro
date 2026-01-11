@@ -1,16 +1,586 @@
 ---
-
+import "../styles/global.css";
+const name = "Kira Grudinina";
+const title = "GenAI / NLP Engineer";
+const tagline =
+  "I build practical GenAI products — RAG systems, LLM agents, and internal tools that ship to production.";
 ---
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{name}</title>
+  </head>
+
+  <body class="min-h-screen bg-gray-50">
+  <!-- NAVBAR -->
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-300 shadow-sm">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="flex h-16 items-center justify-between">
+
+      <!-- Left: Name -->
+      <div class="text-sm font-medium text-gray-900">
+        Kira Grudinina
+      </div>
+
+      <!-- Center: Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+        <a
+		href="#experience"
+		class="text-gray-700 hover:text-indigo-600 transition relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-indigo-600 after:transition-all hover:after:w-full"
+		>
+		Experience
+		</a>
+
+        </a>
+        <a href="#education" class="hover:text-gray-900 transition">
+          Education
+        </a>
+        <a href="#portfolio" class="hover:text-gray-900 transition">
+          Portfolio
+        </a>
+        <a href="#skills" class="hover:text-gray-900 transition">
+          Skills
+        </a>
+        <a href="#interests" class="hover:text-gray-900 transition">
+          Interests
+        </a>
+        <a href="#contact" class="hover:text-gray-900 transition">
+          Contact
+        </a>
+      </nav>
+
+      <!-- Right: Button -->
+      <div>
+        <a
+          href="/posts"
+          class="rounded-md border border-gray-300 px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 transition"
+        >
+          Posts
+        </a>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="flex min-h-screen items-center justify-center px-6">
+        <div class="max-w-2xl text-center">
+          <h1 class="text-6xl font-extrabold tracking-tight text-indigo-700">
+            {name}
+          </h1>
+
+          <p class="mt-4 text-2xl font-medium -blue-400">
+            {title}
+          </p>
+
+          <p class="mt-6 max-w-xl mx-auto text-lg text-gray-600">
+            {tagline}
+          </p>
+
+          <div class="mt-8 flex justify-center gap-4">
+            <a
+				href="https://github.com/Kira252Grudinina"
+				target="_blank"
+				aria-label="GitHub"
+				class="flex h-14 w-14 items-center justify-center rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 hover:scale-105 transition"
+
+				>
+				<!-- GitHub icon -->
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+				</a>
+
+            <a
+              href="https://www.linkedin.com/in/kiragrudinina/"
+              target="_blank"
+			  aria-label="LinkedIn"
+				class="flex h-14 w-14 items-center justify-center rounded-full border border-gray-300
+					text-gray-700 hover:bg-gray-100 hover:scale-105 transition"
+            >
+              <!--LinkedIn icon -->
+			  <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+				viewBox="0 0 291.319 291.319" xml:space="preserve">
+			<g>
+				<path style="fill:#0E76A8;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
+					S65.21,0,145.659,0z"/>
+				<path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
+					c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
+					s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
+					c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
+			</g>
+			</svg>
+            </a>
+          </div>
+        </div>
+      </section>
+	  </section>
+
+<!-- ABOUT / INTRO -->
+<section class="bg-white py-24">
+  <div class="mx-auto max-w-5xl px-6 grid grid-cols-1 md:grid-cols-[16rem_1fr] gap-12 items-start">
+
+    <!-- Photo -->
+    <div class="flex justify-center md:justify-start">
+      <img
+        src="/images/IMG_5499.png"
+        alt="Kira Grudinina"
+        class="h-60 w-60 rounded-full object-cover border border-gray-200"
+      />
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h2 class="text-3xl font-bold text-gray-900">
+        Hi, I’m Kira 👋
+      </h2>
+
+      <p class="mt-4 text-lg text-gray-700">
+        I’m a GenAI / NLP engineer who enjoys turning messy, real-world language data
+        into systems that actually work in production.
+      </p>
+
+      <p class="mt-4 text-gray-700">
+        My background sits at the intersection of linguistics, machine learning,
+        and software engineering. I work on multilingual NLP, retrieval-augmented
+        generation (RAG), embedding models, and LLM-based systems — with a strong
+        focus on robustness, evaluation, and real constraints like latency, cost,
+        and bias.
+      </p>
+
+      <p class="mt-4 text-gray-700">
+        I’m particularly interested in how language, culture, and noise affect AI
+        systems in practice — and how we can design models and pipelines that stay
+        reliable outside of clean benchmarks.
+      </p>
+
+      <p class="mt-4 text-gray-700">
+        Before moving fully into AI engineering, I founded and ran an online language
+        school. Working directly with learners gave me a concrete understanding of
+        how people actually use (and struggle with) language — an experience that
+        still strongly influences how I design NLP systems today.
+      </p>
+
+      <p class="mt-6 text-gray-800 font-medium">
+        I’m currently looking for opportunities to build and ship meaningful GenAI
+        products in environments that value both technical expertise and real-world impact.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+     <!-- EXPERIENCE -->
+<section id="experience" class="bg-white py-24">
+  <div class="mx-auto max-w-5xl px-6">
+
+    <!-- Header -->
+    <div class="flex flex-col items-center mb-16">
+      <details open class="w-full group">
+        <summary class="list-none cursor-pointer flex flex-col items-center gap-6">
+          <!-- Title -->
+          <h2 class="text-3xl font-bold text-gray-900">
+            Experience
+          </h2>
+
+          <!-- Divider + arrow -->
+          <div class="flex items-center gap-4">
+            <div class="h-px w-24 bg-gray-300"></div>
+            <svg
+              class="h-5 w-5 text-gray-500 transition-transform group-open:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+            <div class="h-px w-24 bg-gray-300"></div>
+          </div>
+
+          <!-- CV buttons -->
+          <div class="flex gap-4">
+            <a
+              href="/cv/Kira Grudinina - ENGCV.pdf"
+              target="_blank"
+              class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-5 py-2 text-sm font-medium text-white hover:bg-gray-700 transition"
+            >
+              ⬇ CV (EN)
+            </a>
+
+            <a
+              href="/cv/Kira Grudinina - CV.pdf" 
+              target="_blank"
+              class="inline-flex items-center gap-2 rounded-md bg-gray-800 px-5 py-2 text-sm font-medium text-white hover:bg-gray-700 transition"
+            >
+              ⬇ CV (FR)
+            </a>
+          </div>
+        </summary>
+
+        <!-- Collapsible content -->
+        <div class="relative mt-16 space-y-16">
+
+  		<div class="absolute left-6 top-0 h-full w-px bg-gray-200"></div>
+
+
+
+      <!-- OPSCI.AI -->
+      <div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
+        <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white border border-gray-300">
+		<img
+			src="/logos/opsci-logo-vb.webp"
+			alt="opsci.ai logo"
+			class="h-10 w-10 object-contain"
+		/>
+		</div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">
+			AI Engineer — opsci.ai
+			</h3>
+          <p class="text-sm text-gray-500">
+            Sep 2024 — Present · Paris, France
+          </p>
+
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>
+              Designed and implemented end-to-end data pipelines for multilingual claim matching,
+              ingesting and transforming large volumes of noisy social media text for downstream AI systems.
+            </li>
+            <li>
+              Built and evaluated retrieval pipelines combining multilingual embeddings, reranking strategies,
+              and instruction-tuned LLMs, selecting production-ready trade-offs between quality, latency, and cost.
+            </li>
+            <li>
+              Integrated supervised contrastive fine-tuning of a multilingual embedding model
+              (<span class="font-medium">jina-embeddings-v3</span>) to improve recall, strengthen positive/negative
+              separation, and reduce language-driven bias on real-world data.
+            </li>
+            <li>
+              Developed automated evaluation and validation pipelines for GenAI workflows
+              (hallucination detection, red-teaming), used as quality and safety gates before production deployment.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CNRS -->
+      <div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
+        <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white border border-gray-300">
+		<img
+			src="/logos/cnrs-1.svg"
+			alt="CNRS logo"
+			class="h-7 w-7 object-contain"
+		/>
+		</div>
+
+        <div>
+         <h3 class="text-xl font-semibold text-gray-900">
+			Research Intern — CNRS (Multispeech)
+			</h3>
+
+          <p class="text-sm text-gray-500">
+            Jul 2024 — Sep 2024 · Paris, France
+          </p>
+
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>
+              Extended an academic project on French prosody coaching by collecting and annotating
+              speech data from native and non-native speakers using professional audio equipment.
+            </li>
+            <li>
+              Evaluated pitch-tracking and TTS models
+              (CREPE, FCN-F0, RMVPE, Tacotron 2, FastSpeech 2, Glow-TTS)
+              on a custom speech corpus.
+            </li>
+            <li>
+              Built data-processing pipelines for F0 contours and prosodic features
+              (Praat-based), contributing to prosody-aware TTS and pronunciation-training prototypes.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- START SMART -->
+      <div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
+        <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white border border-gray-300 font-semibold text-indigo-600">
+          Smart
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-900">
+            Founder & Director — Start Smart
+          </h3>
+          <p class="text-sm text-gray-500">
+            Mar 2020 — Jul 2024
+          </p>
+
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>
+              Founded and ran an online language school delivering English and Chinese courses
+              to 50+ learners, managing curriculum design, marketing, and daily operations.
+            </li>
+            <li>
+              Designed personalised training programs for individual and corporate clients,
+              improving learning outcomes and user experience.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      </details>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="bg-gray-50 py-24">
+  <div class="mx-auto max-w-5xl px-6">
+    <h2 class="mb-16 text-3xl font-bold text-gray-900">
+      Education
+    </h2>
+	
+
+    <div class="relative space-y-16">
+  <!-- timeline line -->
+  <div class="absolute left-[1.5rem] top-0 h-full w-px bg-gray-300"></div>
+
+
+
+      <!-- MSc NLP -->
+<div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
+  <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white border border-gray-300">
+    <img
+      src="/logos/unnamed.png"
+      alt="UL logo"
+      class="h-7 w-7 object-contain"
+    />
+  </div>
+    <div>
+
+    <h3 class="text-xl font-semibold text-gray-900">
+      MSc in Natural Language Processing
+    </h3>
+    <p class="text-sm text-gray-500">
+      University of Lorraine · Nancy, France · 2023 — 2025
+    </p>
+
+    <p class="mt-2 text-gray-700">
+      Engineering-focused master’s program covering machine learning, NLP,
+      language technologies, and production-oriented AI systems.
+    </p>
+
+    <!-- Key Topics -->
+    <ul class="mt-4 space-y-1 text-gray-700 list-disc list-inside">
+      <li>Foundations of Natural Language Processing</li>
+      <li>Machine Learning & Neural Networks</li>
+      <li>Language Models and Text Generation</li>
+      <li>Dialogue Systems, Chatbots & Question Answering</li>
+      <li>Multilingual NLP and Low-Resource Languages</li>
+      <li>Opinion Mining and Discourse Analysis</li>
+      <li>Speech Recognition, Synthesis & Signal Processing</li>
+      <li>Semantic Web, Ontologies & Lexical Resources</li>
+      <li>Data Processing, Storage & Retrieval</li>
+      <li>Software Engineering & System Design (UML)</li>
+    </ul>
+
+    <!-- Thesis -->
+    <p class="mt-4 text-gray-700">
+      <span class="font-medium">Master’s thesis:</span>
+      Robust Multilingual Claim Matching with Embedding-Based Retrieval
+      and Contrastive Fine-Tuning
+      <span class="text-sm text-gray-500">
+        (final grade: 16/20 · internship supervisor grade: 20/20)
+      </span>
+    </p>
+
+    <!-- Optional details -->
+    <details class="mt-4">
+      <summary class="cursor-pointer text-sm text-indigo-600 hover:underline">
+        View detailed coursework
+      </summary>
+      <ul class="mt-2 text-sm text-gray-600 list-disc list-inside">
+        <li>Neural Networks, Intelligent Systems, Reasoning in AI</li>
+        <li>Symbolic AI and Knowledge Discovery</li>
+        <li>Language Models and Generation</li>
+        <li>Dialogue Systems and Conversational AI</li>
+        <li>Speech Recognition, Robustness and Signal Processing</li>
+        <li>Semantic Web and Ontology Engineering</li>
+        <li>Data Engineering and Software Development</li>
+        <li>Tutored Projects and Research Internship</li>
+      </ul>
+    </details>
+  </div>
+</div>
+
+
+      <!-- BA + MA Linguistics -->
+      <div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
+  <div class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white border border-gray-300">
+    <img
+      src="/logos/logo_32.png"
+      alt="SUSU logo"
+      class="h-7 w-7 object-contain"
+    />
+  </div>
+
+  <div>
+          <h3 class="text-xl font-semibold text-gray-900">
+            BA & MA in Theoretical and Computational Linguistics
+          </h3>
+          <p class="text-sm text-gray-500">
+            South Ural State University · Russia · 2009 — 2014
+          </p>
+
+          <p class="mt-2 text-gray-700">
+            Comprehensive training in formal linguistics combined with early
+            computational linguistics, programming, and cognitive science.
+          </p>
+
+          <ul class="mt-4 space-y-1 text-gray-700 list-disc list-inside">
+            <li>Formal Linguistics: Syntax, Morphology, Semantics</li>
+            <li>Computational Linguistics & Natural Language Processing</li>
+            <li>Logic and Mathematical Foundations</li>
+            <li>Psycholinguistics and Cognitive Science</li>
+            <li>Programming Languages and Language Processing</li>
+            <li>Translation Theory and Practice</li>
+          </ul>
+
+          <p class="mt-4 text-gray-700">
+            <span class="font-medium">Master’s thesis:</span>
+            Comparative Analysis of Cantonese Dialect and Standard Mandarin
+            <span class="text-sm text-gray-500">(grade: Excellent)</span>
+          </p>
+
+          <details class="mt-4">
+            <summary class="cursor-pointer text-sm text-indigo-600 hover:underline">
+              View detailed coursework
+            </summary>
+            <ul class="mt-2 text-sm text-gray-600 list-disc list-inside">
+              <li>Phonetics, Phonology, Morphology, Syntax, Semantics</li>
+              <li>Formal Models in Linguistics</li>
+              <li>Natural Language Processing and Automated Language Analysis</li>
+              <li>Psycholinguistics and Sociolinguistics</li>
+              <li>Logic and Foundations of Human Knowledge</li>
+              <li>Programming Languages</li>
+              <li>Translation and Contrastive Linguistics</li>
+              <li>Chinese and English Language Practice</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="bg-white py-24">
+  <div class="mx-auto max-w-5xl px-6">
+
+    <h2 class="mb-16 text-3xl font-bold text-gray-900">
+      Skills
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Engineering -->
+      <div class="rounded-xl bg-white border border-gray-200 p-6">
+        <h3 class="mb-4 text-lg font-semibold text-gray-900 flex items-center gap-2">
+		<svg  class="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="System / Data">
+<path id="Vector" d="M18 12V17C18 18.6569 15.3137 20 12 20C8.68629 20 6 18.6569 6 17V12M18 12V7M18 12C18 13.6569 15.3137 15 12 15C8.68629 15 6 13.6569 6 12M18 7C18 5.34315 15.3137 4 12 4C8.68629 4 6 5.34315 6 7M18 7C18 8.65685 15.3137 10 12 10C8.68629 10 6 8.65685 6 7M6 12V7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+          Engineering & Data
+        </h3>
+        <ul class="space-y-2 text-gray-700 list-disc list-inside">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Data ingestion and transformation pipelines</li>
+          <li>REST APIs (FastAPI)</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
+      <!-- GenAI / NLP -->
+<div class="rounded-xl bg-white border border-gray-200 p-6">
+  <h3 class="mb-4 text-lg font-semibold text-gray-900 flex items-center gap-2">
+    <svg
+      class="h-5 w-5 text-indigo-600"
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>AI</title>
+      <g>
+        <path d="M17.9,2h-.4L7.6,6.6a1,1,0,0,0-.6.9v7.4l-.6.5-4,3.3a.8.8,0,0,0-.4.8v9a.9.9,0,0,0,.4.8l4,3.3.6.5v7.4a1,1,0,0,0,.6.9l9.9,4.5h.4l.6-.2,4-2.7V25.5H21a1.5,1.5,0,0,1,0-3h1.5V4.9l-4-2.7Z"/>
+        <path d="M45.6,18.7l-4-3.3-.6-.5V7.5a1,1,0,0,0-.6-.9L30.5,2.1h-.4l-.6.2-4,2.7V22.5H27a1.5,1.5,0,0,1,0,3H25.5V43.1l4,2.7.6.2h.4l9.9-4.5a1,1,0,0,0,.6-.9V33.1l.6-.5,4-3.3a.9.9,0,0,0,.4-.8v-9Z"/>
+      </g>
+    </svg>
+          GenAI & NLP
+        </h3>
+        <ul class="space-y-2 text-gray-700 list-disc list-inside">
+          <li>Embeddings and vector search (FAISS, Chroma)</li>
+          <li>Retrieval-Augmented Generation (RAG)</li>
+          <li>Hugging Face ecosystem</li>
+          <li>vLLM and GPU inference</li>
+          <li>Multilingual NLP systems</li>
+        </ul>
+      </div>
+
+      <!-- Infrastructure -->
+      <div class="rounded-xl bg-white border border-gray-200 p-6">
+        <h3 class="mb-4 text-lg font-semibold text-gray-900 flex items-center gap-2">
+		<svg  class="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9.036a3.485 3.485 0 011.975.99M4 12.5A3.5 3.5 0 007.5 16h9.75a2.75 2.75 0 00.734-5.4A5 5 0 008.37 9.108 3.5 3.5 0 004 12.5z"/>
+</svg>
+          Infrastructure
+        </h3>
+        <ul class="space-y-2 text-gray-700 list-disc list-inside">
+          <li>AWS</li>
+          <li>GCP</li>
+          <li>Lambda Labs</li>
+        </ul>
+      </div>
+	  <!-- Languages -->
+      <div class="rounded-xl bg-white border border-gray-200 p-6">
+        <h3 class="mb-4 text-lg font-semibold text-gray-900 flex items-center gap-2">
+         <span>🌍</span>  Languages
+          
+        </h3>
+
+        <ul class="space-y-3 text-gray-700">
+          
+          <li class="flex items-center gap-2">
+            🇫🇷 <span class="font-medium">French</span> — fluent
+          </li>
+          <li class="flex items-center gap-2">
+            🇬🇧 <span class="font-medium">English</span> — fluent
+          </li>
+          <li class="flex items-center gap-2">
+            🇨🇳 <span class="font-medium">Chinese</span> — advanced
+          </li>
+		  <li class="flex items-center gap-2">
+            🇷🇺 <span class="font-medium">Russian</span> — native
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
