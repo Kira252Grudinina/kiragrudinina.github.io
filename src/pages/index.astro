@@ -343,16 +343,39 @@ const tagline =
 <!-- EDUCATION -->
 <section id="education" class="bg-gray-50 py-24">
   <div class="mx-auto max-w-5xl px-6">
-    <h2 class="mb-16 text-3xl font-bold text-gray-900">
-      Education
-    </h2>
-	
 
-    <div class="relative space-y-16">
-  <!-- timeline line -->
-  <div class="absolute left-[1.5rem] top-0 h-full w-px bg-gray-300"></div>
+    <details open class="w-full group">
+      <summary class="list-none cursor-pointer flex flex-col items-center gap-6 mb-16">
 
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-gray-900">
+          Education
+        </h2>
 
+        <!-- Divider + arrow -->
+        <div class="flex items-center gap-4">
+          <div class="h-px w-24 bg-gray-300"></div>
+
+          <svg
+            class="h-5 w-5 text-gray-500 transition-transform group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+
+          <div class="h-px w-24 bg-gray-300"></div>
+        </div>
+
+      </summary>
+
+      <!-- COLLAPSIBLE CONTENT -->
+      <div class="relative mt-16 space-y-16">
+
+        <!-- timeline line -->
+        <div class="absolute left-6 top-0 h-full w-px bg-gray-200"></div>
 
       <!-- MSc NLP -->
 <div class="grid grid-cols-[3rem_1fr] gap-6 relative items-start">
@@ -477,18 +500,45 @@ const tagline =
         </div>
       </div>
 
-    </div>
+   </div>
+    </details>
+
   </div>
 </section>
+
 <!-- SKILLS -->
 <section id="skills" class="bg-white py-24">
   <div class="mx-auto max-w-5xl px-6">
 
-    <h2 class="mb-16 text-3xl font-bold text-gray-900">
-      Skills
-    </h2>
+    <details open class="w-full group">
+      <summary class="list-none cursor-pointer flex flex-col items-center gap-6 mb-16">
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Title -->
+        <h2 class="text-3xl font-bold text-gray-900">
+          Skills
+        </h2>
+
+        <!-- Divider + arrow -->
+        <div class="flex items-center gap-4">
+          <div class="h-px w-24 bg-gray-300"></div>
+
+          <svg
+            class="h-5 w-5 text-gray-500 transition-transform group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+
+          <div class="h-px w-24 bg-gray-300"></div>
+        </div>
+
+      </summary>
+
+      <!-- COLLAPSIBLE CONTENT -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
 
       <!-- Engineering -->
       <div class="rounded-xl bg-white border border-gray-200 p-6">
@@ -572,7 +622,9 @@ const tagline =
         </ul>
       </div>
 
-    </div>
+   </div>
+    </details>
+
   </div>
 </section>
 
