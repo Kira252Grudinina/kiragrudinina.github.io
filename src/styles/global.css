@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.data-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(99,102,241,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99,102,241,0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+    opacity: 0.25;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+}
+
+.orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(60px);
+    opacity: 0.6;
+    animation: float-orb 1s linear infinite;
+  }
+  
+  .orb-1 {
+    width: 420px;
+    height: 420px;
+    background: radial-gradient(circle, #6366f1, transparent 70%);
+    top: -10%;
+    left: -10%;
+  }
+  
+  .orb-2 {
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, #22d3ee, transparent 70%);
+    bottom: -20%;
+    right: -15%;
+    animation-delay: 1s;
+  }
+  
+  .orb-3 {
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, #a78bfa, transparent 70%);
+    top: 30%;
+    right: 20%;
+    animation-delay: 1s;
+  }
+  
+  .node {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+  
+    background: rgba(99, 102, 241, 0.35); /* indigo-500, very soft */
+    box-shadow: 0 0 6px rgba(99, 102, 241, 0.25);
+  
+    animation: drift 22s ease-in-out infinite;
+  }
+  
+  .node.dim {
+    background: rgba(99, 102, 241, 0.18);
+    box-shadow: none;
+  }
+  
+  .node.core {
+    background: rgba(79, 70, 229, 0.45);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.35);
+  }
+  
+/* top perimeter */
+.n1 { top: 12%; left: 30%; animation-delay: 0s; }
+.n2 { top: 14%; left: 55%; animation-delay: 2s; }
+.n3 { top: 18%; left: 70%; animation-delay: 4s; }
+
+/* sides */
+.n4 { top: 42%; left: 18%; animation-delay: 6s; }
+.n5 { top: 50%; left: 78%; animation-delay: 8s; }
+
+/* bottom perimeter */
+.n6 { top: 72%; left: 25%; animation-delay: 10s; }
+.n7 { top: 78%; left: 45%; animation-delay: 12s; }
+.n8 { top: 75%; left: 65%; animation-delay: 14s; }
+
+/* one stray node */
+.n9 { top: 32%; left: 82%; animation-delay: 16s; }
+
+@keyframes drift {
+  0%, 100% {
+    transform: translate(0, 0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(4px, -6px);
+    opacity: 0.4;
+  }
+}
+
+
+  
