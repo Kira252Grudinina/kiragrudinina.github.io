@@ -8,13 +8,13 @@ const tagline =
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <title>{name}</title>
   </head>
 
-  <body class="min-h-screen bg-gray-50">
+  <body class="bg-gray-50">
   <!-- NAVBAR -->
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-300 shadow-sm">
   <div class="mx-auto max-w-6xl px-6">
@@ -69,59 +69,6 @@ const tagline =
 
     <main>
 
-      <!-- HERO -->
-       <!-- HERO -->
-  <section class="flex min-h-screen items-center justify-center px-6">
-    <div class="max-w-2xl text-center">
-      <h1 class="text-6xl font-extrabold tracking-tight text-indigo-700">
-        {name}
-      </h1>
-
-      <p class="mt-4 text-2xl font-medium text-blue-500">
-        {title}
-      </p>
-
-      <p class="mt-6 max-w-xl mx-auto text-lg text-gray-600">
-        {tagline}
-      </p>
-
-      <div class="mt-8 flex justify-center gap-4">
-            <a
-				href="https://github.com/Kira252Grudinina"
-				target="_blank"
-				aria-label="GitHub"
-				class="flex h-14 w-14 items-center justify-center rounded-full border border-gray-300 text-gray-700 hover:bg-gray-100 hover:scale-105 transition"
-
-				>
-				<!-- GitHub icon -->
-				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-				</a>
-
-            <a
-              href="https://www.linkedin.com/in/kiragrudinina/"
-              target="_blank"
-			  aria-label="LinkedIn"
-				class="flex h-14 w-14 items-center justify-center rounded-full border border-gray-300
-					text-gray-700 hover:bg-gray-100 hover:scale-105 transition"
-            >
-              <!--LinkedIn icon -->
-			  <svg height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-				viewBox="0 0 291.319 291.319" xml:space="preserve">
-			<g>
-				<path style="fill:#0E76A8;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66s-65.21,145.659-145.66,145.659S0,226.1,0,145.66
-					S65.21,0,145.659,0z"/>
-				<path style="fill:#FFFFFF;" d="M82.079,200.136h27.275v-90.91H82.079V200.136z M188.338,106.077
-					c-13.237,0-25.081,4.834-33.483,15.504v-12.654H127.48v91.21h27.375v-49.324c0-10.424,9.55-20.593,21.512-20.593
-					s14.912,10.169,14.912,20.338v49.57h27.275v-51.6C218.553,112.686,201.584,106.077,188.338,106.077z M95.589,100.141
-					c7.538,0,13.656-6.118,13.656-13.656S103.127,72.83,95.589,72.83s-13.656,6.118-13.656,13.656S88.051,100.141,95.589,100.141z"/>
-			</g>
-			</svg>
-            </a>
-         </div>
-      </div>
-</section>
-</section>
-
 <!-- ABOUT / INTRO -->
 <section class="bg-white py-24">
   <div class="mx-auto max-w-5xl px-6 grid grid-cols-1 md:grid-cols-[16rem_1fr] gap-12 items-start">
@@ -141,18 +88,18 @@ const tagline =
         Hi, I’m Kira 👋
       </h2>
 
-      <p class="mt-4 text-lg text-gray-700">
+      <p class="mt-4 text-lg text-gray-800">
         I’m an NLP engineer, curious about how AI systems behave when things go wrong —
         when inputs are messy, users are unpredictable, or models are pushed outside of clean benchmarks.
       </p>
 
-      <p class="mt-4 text-lg text-gray-700">
+      <p class="mt-4 text-lg text-gray-800">
         I graduated in 2025 from the University of Lorraine in Nancy with a MSc in Natural
         Language Processing (CS Track). My background combines linguistics, machine learning, and software engineering,
         and most of my work today is around LLM-based systems, multilingual NLP, and RAG.
       </p>
 
-      <p class="mt-4 text-lg text-gray-700">
+      <p class="mt-4 text-lg text-gray-800">
         In my recent work, I’ve been involved in evaluating and testing large language models, looking at
         issues like hallucinations, bias, misuse, and robustness under perturbations. I helped build internal tools to test models
         before they’re deployed.
