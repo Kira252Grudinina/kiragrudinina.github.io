@@ -1,0 +1,227 @@
+---
+
+import "../../styles/global.css";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sexism Detection API - Kira Grudinina</title>
+  </head>
+
+  <body class="bg-gray-50">
+    
+    <!-- Simple Header -->
+    <header class="bg-white border-b border-gray-200">
+      <div class="mx-auto max-w-5xl px-6 py-4">
+        <a href="/" class="text-sm text-indigo-600 hover:text-indigo-700 flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+          Back to Portfolio
+        </a>
+      </div>
+    </header>
+
+    <main class="py-16">
+      <div class="mx-auto max-w-4xl px-6">
+
+        <!-- Project Header -->
+        <div class="mb-12">
+          <h1 class="text-4xl font-bold text-gray-900">
+            Sexism Detection API
+          </h1>
+          <p class="mt-2 text-lg text-gray-600">
+            Production-Ready ML System for Content Moderation
+          </p>
+
+          <div class="mt-6 flex gap-4">
+            <a 
+              href="https://github.com/Kira252Grudinina/etp-23-modernized"
+              target="_blank"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition"
+            >
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/>
+              </svg>
+              View on GitHub
+            </a>
+            
+            <span class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg">
+              📅 2023 → 2026
+            </span>
+          </div>
+        </div>
+
+        <!-- Overview -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Modernized a 2023 Master's research project into a production-ready ML system for detecting sexist language.
+            Restructured from Jupyter notebooks into a scalable FastAPI application with Docker deployment, 
+            comprehensive testing, and interactive web interface.
+          </p>
+        </section>
+
+        <!-- Screenshot/Demo (Add your actual screenshots here) -->
+        <section class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Interface</h2>
+        <div class="rounded-xl border border-gray-200 overflow-hidden bg-white">
+          <img 
+            src="/images/gradio-interface.png" 
+            alt="Gradio interface showing sexism detection with confidence scores"
+            class="w-full"
+          />
+        </div>
+        <p class="text-sm text-gray-600 mt-2">
+          Interactive Gradio interface with real-time predictions and confidence visualization
+        </p>
+      </section>
+
+        <!-- Key Achievements -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Achievements</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <div class="text-indigo-600 font-semibold mb-2">Model Performance</div>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>• F1 Score: 0.827</li>
+                <li>• Accuracy: 87.85%</li>
+                <li>• Binary classification (sexist/not sexist)</li>
+                <li>• 20,000 EDOS dataset samples</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <div class="text-indigo-600 font-semibold mb-2">Production API</div>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>• FastAPI with OpenAPI docs</li>
+                <li>• 80-95ms inference latency</li>
+                <li>• Batch processing (up to 100 texts)</li>
+                <li>• Request validation & error handling</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <div class="text-indigo-600 font-semibold mb-2">Infrastructure</div>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>• Docker & docker-compose setup</li>
+                <li>• Gradio web interface</li>
+                <li>• Health monitoring</li>
+                <li>• Multi-container orchestration</li>
+              </ul>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <div class="text-indigo-600 font-semibold mb-2">Code Quality</div>
+              <ul class="text-sm text-gray-700 space-y-1">
+                <li>• Modern Python package structure</li>
+                <li>• Type hints & modular design</li>
+                <li>• Comprehensive testing</li>
+                <li>• Clean Git history (12 commits)</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Technical Implementation -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Technical Implementation</h2>
+          
+          <div class="space-y-6">
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="font-semibold text-gray-900 mb-2">Training Strategy</h3>
+              <p class="text-sm text-gray-700">
+                Trained on Google Colab (Tesla T4 GPU) to overcome local hardware limitations,
+                reducing training time from 4-6 hours (Mac M3) to 90 minutes while achieving target performance metrics.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="font-semibold text-gray-900 mb-2">Architecture</h3>
+              <p class="text-sm text-gray-700">
+                RoBERTa-base encoder with custom classification head, optimized preprocessing pipeline
+                with LRU caching, and PyTorch DataLoaders for efficient batch processing.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="font-semibold text-gray-900 mb-2">Deployment</h3>
+              <p class="text-sm text-gray-700">
+                Multi-container setup with separate API and UI services, automatic model loading on startup,
+                error handling with proper HTTP status codes, and CORS middleware for cross-origin requests.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trade-offs -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Trade-offs & Design Decisions</h2>
+          
+          <div class="space-y-4">
+            <div class="bg-indigo-50 rounded-lg p-5 border border-indigo-100">
+              <h3 class="font-semibold text-indigo-900 mb-2">Binary vs. Multi-class</h3>
+              <p class="text-sm text-indigo-800">
+                Focused on binary classification (sexist/not sexist) rather than fine-grained categories
+                (threat, derogation, animosity, prejudiced) to maximize F1 score and deployment simplicity.
+                Binary classification is more actionable for content moderation.
+              </p>
+            </div>
+
+            <div class="bg-indigo-50 rounded-lg p-5 border border-indigo-100">
+              <h3 class="font-semibold text-indigo-900 mb-2">Model Size</h3>
+              <p class="text-sm text-indigo-800">
+                Used RoBERTa-base (125M parameters) instead of RoBERTa-large (355M parameters) to balance
+                performance with inference speed and deployment costs. Achieved comparable results (F1 0.827 vs. 0.83)
+                with 3x faster inference.
+              </p>
+            </div>
+
+            <div class="bg-indigo-50 rounded-lg p-5 border border-indigo-100">
+              <h3 class="font-semibold text-indigo-900 mb-2">Training Infrastructure</h3>
+              <p class="text-sm text-indigo-800">
+                Opted for cloud GPU (Colab) over local training to avoid 4-6 hour Mac M3 training time
+                and system freeze issues. Demonstrates practical problem-solving and resource optimization.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Technology Stack</h2>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-blue-50 text-blue-700 text-sm rounded-lg font-medium">Python 3.12</span>
+            <span class="px-4 py-2 bg-orange-50 text-orange-700 text-sm rounded-lg font-medium">PyTorch 2.10</span>
+            <span class="px-4 py-2 bg-green-50 text-green-700 text-sm rounded-lg font-medium">Transformers 5.1</span>
+            <span class="px-4 py-2 bg-purple-50 text-purple-700 text-sm rounded-lg font-medium">FastAPI</span>
+            <span class="px-4 py-2 bg-pink-50 text-pink-700 text-sm rounded-lg font-medium">Gradio</span>
+            <span class="px-4 py-2 bg-blue-50 text-blue-700 text-sm rounded-lg font-medium">Docker</span>
+            <span class="px-4 py-2 bg-gray-50 text-gray-700 text-sm rounded-lg font-medium">Google Colab</span>
+          </div>
+        </section>
+
+        <!-- GitHub Link -->
+        <section class="text-center py-8">
+          <a 
+            href="https://github.com/Kira252Grudinina/etp-23-modernized"
+            target="_blank"
+            class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition"
+          >
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            View Full Code on GitHub
+          </a>
+        </section>
+
+      </div>
+    </main>
+
+  </body>
+</html>
